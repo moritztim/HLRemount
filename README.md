@@ -2,7 +2,7 @@
 An AHK script for Hogwarts Legacy which remounts your most recent mount quickly upon pressing b
 
 ## Instalation
-Just download the script and double click it. It will do its thing while you're in the game. Works from any location on your computer.
+Just download the executable of the [latest version](https://github.com/moritz-t-w/HLRemount/releases/latest) and execute it. It will do its thing while you're in the game. Works from any location on your computer.
 
 ## Usage
 Press b to equip your last used mount. By default it's the broom.
