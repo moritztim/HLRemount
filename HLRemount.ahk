@@ -20,12 +20,13 @@ lastMount := 3 ; broom by default
 
 	; Remount the last used mount when the "b" key is pressed
 	~b::
-		KeyWait, b, T0.35 ; check if the key is held down
+		KeyWait, b, T0.4 ; check if the key is held down
 		If ErrorLevel {
 			KeyWait, b, U ; prevent another check on the same press
 			Return
 		} Else {
 			Send, {Tab down}
+			Sleep, 450 ; the magic number
 			Send, %lastMount% ; remount
 			Send, {Tab up}
 		}
