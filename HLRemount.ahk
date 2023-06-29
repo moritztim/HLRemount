@@ -1,33 +1,42 @@
-#NoEnv
 #SingleInstance force
-SendMode Input
+SendMode "Input"
 
 lastMount := 3 ; broom by default
 
-#IfWinActive ahk_exe HogwartsLegacy.exe
+;#HotIf WinActive("ahk_exe HogwartsLegacy.exe")
 	; Monitor mounts
-	~Tab::
+	~Tab::{
 		timeout := 0
 		While GetKeyState("Tab", "P") && timeout < 1 { ; while tab is pressed
-			Input, k, L1 M
-			If (k = 1 || k = 2 || k = 3) {
-				lastMount := k ; save the last used mount
-				Break
+			k1 := GetKeyState("1", "P")
+			k2 := GetKeyState("2", "P")
+			k3 := GetKeyState("3", "P")
+
+			; if any of the mount keys is pressed, set current mount to that key
+			switch 1 {
+				case k1:
+					lastMount := 1
+				case k2:
+					lastMount := 2
+				case k3:
+					lastMount := 3
 			}
+			
 			timeout += 0.01
 		}
-	Return
+		Return
+	}
 
 	; Remount the last used mount when the "b" key is pressed
-	~b::
-		KeyWait, b, T0.4 ; check if the key is held down
-		If ErrorLevel {
-			KeyWait, b, U ; prevent another check on the same press
+	~b:: {
+		if KeyWait("b", "T0.4") { ; if the key is held down for less than 0.4 seconds
 			Return
-		} Else {
-			Send, {Tab down}
-			Sleep, 450 ; the magic number
-			Send, %lastMount% ; remount
-			Send, {Tab up}
+		} else {
+			; remount
+			Send("{Tab Down}")
+			Sleep(450) ; the magic number
+			Send(lastMount)
+			Send("{Tab up}")
 		}
-	Return
+		Return
+	}
