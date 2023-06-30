@@ -4,7 +4,7 @@ SendMode "Input"
 lastMount := 3 ; broom by default
 remountKey := "b"
 
-;#HotIf WinActive("ahk_exe HogwartsLegacy.exe")
+#HotIf WinActive("ahk_exe HogwartsLegacy.exe")
 	; Monitor mounts
 	~Tab::{
 		timeout := 0
