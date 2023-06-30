@@ -8,6 +8,7 @@ First, install [AutoHotkey](https://www.autohotkey.com/), then download the [lat
 ### Using the executable *(potentially dangerous)*
 Simply download the executable of the [latest version](https://github.com/moritz-t-w/HLRemount/releases/latest) and execute it. It will do its thing while you're in the game. Works from any location on your computer.
 > You should not trust me or any random online person and therefore it's advisable to review and compile the script yourself.
+
 > The script may even be flagged as a virus as it is constantly monitoring your keyboard input. This is necessary to know what mount you last equipped.
 
 ### Running the script directly
