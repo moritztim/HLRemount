@@ -2,6 +2,7 @@
 SendMode "Input"
 
 lastMount := 3 ; broom by default
+remountKey := "b"
 
 ;#HotIf WinActive("ahk_exe HogwartsLegacy.exe")
 	; Monitor mounts
@@ -27,9 +28,9 @@ lastMount := 3 ; broom by default
 		Return
 	}
 
-	; Remount the last used mount when the "b" key is pressed
+	; Remount the last used mount when the hotkey is pressed
 	~b:: {
-		if KeyWait("b", "T0.4") { ; if the key is held down for less than 0.4 seconds
+		if KeyWait(remountKey, "T0.4") { ; if the key is held down for less than 0.4 seconds
 			Return
 		} else {
 			; remount
