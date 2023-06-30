@@ -14,7 +14,12 @@ Simply download the executable of the [latest version](https://github.com/moritz
 First, install [AutoHotkey](https://www.autohotkey.com/), then download the [latest version](https://github.com/moritz-t-w/HLRemount/releases/latest) and open the `.ahk` file.
 
 ## Usage
+# Ingame
 Press b on your keyboard to equip your last used mount. By default it's the broom.
+# Pausing and stopping the script
+The script does not run when the game is not in focus.
+If you want the hotkey to be inactive but the script to still observe what mount you're using (so you can remount it later), right click the tray icon and select `Suspend Hotkeys`. Simply do this again to enable the hotkey again.
+If you want to stop the script completely, right click the tray icon and select `Exit`.
 
 ## Customisation
 * To change the default mount, change the number on line 4 (`lastMount := 3`) to the number next to your mount in the tab menu.
