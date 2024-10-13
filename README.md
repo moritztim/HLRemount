@@ -1,18 +1,22 @@
 # HLRemount
 An AHK V2.0 script for Hogwarts Legacy which remounts your most recent mount quickly upon pressing b
 
-## Instalation
-Install the script using any of the following methods
-### Compiling the script *(recommended)*
-First, install [AutoHotkey](https://www.autohotkey.com/), then download the [latest version](https://github.com/moritztim/HLRemount/releases/latest) and right click > `Compile` the `.ahk` file. You can now use this executable even on a system without AutoHotkey.
-### Using the executable *(potentially dangerous)*
-Simply download the executable of the [latest version](https://github.com/moritztim/HLRemount/releases/latest) and execute it. It will do its thing while you're in the game. Works from any location on your computer.
-> You should not trust me or any random online person and therefore it's advisable to review and compile the script yourself.
-
-> The script may even be flagged as a virus as it is constantly monitoring your keyboard input. This is necessary to know what mount you last equipped.
-
-### Running the script directly
-First, install [AutoHotkey](https://www.autohotkey.com/), then download the [latest version](https://github.com/moritztim/HLRemount/releases/latest) and open the `.ahk` file.
+## Installation
+### A: Running or compiling the script with AutoHotkey
+1. Install [AutoHotkey](https://www.autohotkey.com/) `v2.0`
+2. Get the source code
+3. Clone this repo with git or download the [latest version](https://github.com/moritztim/HLRemount/releases/latest)'s source code and extract the archive
+2. Download the [latest version]()'s source code
+#### If you want to run it through the installed AutoHotkey:
+3. Open the `.ahk` file.
+#### If want to compile it to get a standalone executable:
+3. Right click the `.ahk` file
+4. Select `Compile`.
+You can now use the resulting executable (even on a system that does not have AutoHotkey installed).
+You can even compare the hash with the executable I provided to see if you could've just trusted me in the first place.
+### B: Running the executable *(if you trust me)*
+Simply download the executable of the [latest version](https://github.com/moritztim/HLRemount/releases/latest) and execute it.
+> ⚠️ You should not trust a random stranger on the internet who gives you an executable, so it's highly advisable to review and compile/run the script yourself.
 
 ## Usage
 # Ingame
